@@ -49,7 +49,7 @@ namespace OAuth.Server.Controllers
         }
 
 
-        public async Task<IActionResult> Token(
+        public object Token(
             string grant_type,
             string code, 
             string redirect_uri,
@@ -88,11 +88,12 @@ namespace OAuth.Server.Controllers
                 refresh_token = "RefreshTokenSampleValueSomething77",
             };
 
-            var responseJson = JsonConvert.SerializeObject(responseObject);
-            var responseBytes = Encoding.UTF8.GetBytes(responseJson);
+            //var responseJson = JsonConvert.SerializeObject(responseObject);
+            //var responseBytes = Encoding.UTF8.GetBytes(responseJson);
 
-            await Response.Body.WriteAsync(responseBytes, 0, responseBytes.Length);
-            return Redirect(redirect_uri);
+            //await Response.Body.WriteAsync(responseBytes, 0, responseBytes.Length);
+            //return Redirect(redirect_uri);
+            return responseObject;
         }
 
         [Authorize]
