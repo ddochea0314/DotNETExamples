@@ -35,7 +35,7 @@ namespace OAuth.Client.Controllers
         {
             // 인증이 되어야 접근가능한 페이지
             //var serverResponse = await AccessTokenRefreshWrapper(() => SecuredGetRequest("https://localhost:44300/OAuth/Vaildate"));
-            return View();
+            return View(HttpContext.User);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
