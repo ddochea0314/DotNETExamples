@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Get.FormQuery", "Get.FormQuery\Get.FormQuery.csproj", "{07BF8B8A-12D6-4A7E-8DB0-A943F9A84C5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07BF8B8A-12D6-4A7E-8DB0-A943F9A84C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07BF8B8A-12D6-4A7E-8DB0-A943F9A84C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07BF8B8A-12D6-4A7E-8DB0-A943F9A84C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07BF8B8A-12D6-4A7E-8DB0-A943F9A84C5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {034657AE-30AC-4E6E-91E1-740F60B969E0}
+	EndGlobalSection
+EndGlobal
