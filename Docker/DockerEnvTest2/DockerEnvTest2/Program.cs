@@ -14,7 +14,7 @@ namespace DockerEnvTest2
             //db.Student.Add(new Student() { Name = "홍길순", Grade = 1 });
             //db.Student.Add(new Student() { Name = "김철수", Grade = 2 });
             //db.Student.Add(new Student() { Name = "김영희", Grade = 2 });
-            db.SaveChanges();
+            //db.SaveChanges();
             foreach (var student in db.Student)
             {
                 Console.WriteLine($"이름 : {student.Name}, 학년 : {student.Grade}");
