@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 
 namespace LightSailTest
@@ -24,6 +25,7 @@ namespace LightSailTest
                     webBuilder.UseKestrel(options =>
                     {
                         options.ListenAnyIP(5000);
+                        options.Listen(IPAddress.Loopback, 5000);
                     });
                 });
     }
