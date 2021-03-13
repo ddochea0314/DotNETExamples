@@ -19,7 +19,7 @@ namespace AsyncAwaitTestServer
             while(true)
             {
                 var client = socket.Accept();
-                Task.Run(async () =>
+                Task.Run(() =>
                 {
                     while (true)
                     {

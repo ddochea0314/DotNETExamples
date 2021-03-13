@@ -17,7 +17,7 @@ namespace AsyncAwaitTestClient
                 var data = Console.ReadLine();
                 if (!client.Connected)
                 {
-                    client.Connect("localhost", 5000);
+                    client.Connect("18.183.87.223", 5000);
                 }
                 client.Send(Encoding.UTF8.GetBytes(data));
             }
