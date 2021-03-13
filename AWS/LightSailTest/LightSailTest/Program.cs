@@ -22,10 +22,12 @@ namespace LightSailTest
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseUrls();
                     webBuilder.UseKestrel(options =>
                     {
-                        options.ListenAnyIP(5000);
-                        options.Listen(IPAddress.Loopback, 5000);
+                        options.ListenLocalhost(5001);
+                        options.ListenAnyIP(5001);
+                        
                     });
                 });
     }
