@@ -21,9 +21,9 @@ namespace LightSailTest
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.ConfigureKestrel(opt =>
+                    webBuilder.UseKestrel(options =>
                     {
-                        opt.ListenAnyIP(5000);
+                        options.ListenAnyIP(5000);
                     });
                 });
     }
