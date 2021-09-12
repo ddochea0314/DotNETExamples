@@ -25,7 +25,9 @@ namespace ServiceLifeCycle
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddSingleton<GuidService>();
+            //services.AddSingleton<GuidService>(); // 나머지 함수 주석처리 후  실행시, 2개의 GUID 모두 동일하게 표시. 새로고침해도 변하지 않음
+            //services.AddScoped<GuidService>(); // 나머지 함수 주석처리 후 실행시, 2개의 GUID 모두 동일하게 표시. 새로고침마다 변함
+            services.AddTransient<GuidService>(); // 나머지 함수 주석처리 후 실행시, 2개의 GUID 모두 다르게하게 표시. 새로고침마다 변함
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
